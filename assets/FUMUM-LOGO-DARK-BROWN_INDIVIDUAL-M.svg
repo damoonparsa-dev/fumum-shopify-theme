@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="INDIVIDUAL_LETTERS_COLOR" data-name="INDIVIDUAL LETTERS + COLOR" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #140b0b;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="720 0 360 193.33 0 0 0 720 720 720 720 0"/>
+</svg>
