@@ -20,7 +20,7 @@
                         </div>
 {% endfor %}
               </div>
-              <div id="w-node-_5eccf730-c887-5204-0e0c-693f99a7329a-99a7328f" class="footer_newsletter">
+              <div id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a664d-185d804e" class="footer_newsletter">
                 <h2 class="heading-style-h2">
 {{ section.settings.text_heading }}
 </h2>
@@ -28,9 +28,9 @@
                   {% form 'customer', return_to: '/', class: 'footer_form' %}
 <div class="form_field-wrapper"><label for="email-2" class="form_hidden-label">Your E-Mail-Address</label><input class="form_input w-input" maxlength="256" name="contact[email]" data-name="Email 2" placeholder="{{ section.settings.placeholder_text }}" type="email" id="email-2" required=""></div>
                     <div li-object="form.errors | default_errors" class="text-size-tiny text-color-red">{{ form.errors | default_errors }}</div>
-                    <div id="w-node-_5eccf730-c887-5204-0e0c-693f99a732a5-99a7328f" class="hide w-embed"><input type="hidden" name="contact[accepts_marketing]" value="false"></div><label id="w-node-_5eccf730-c887-5204-0e0c-693f99a732a6-99a7328f" class="w-checkbox form_checkbox" name="contact[accepts_marketing]"><input type="checkbox" name="Accepts-Marketing-2" id="Accepts-Marketing-2" data-name="Accepts Marketing 2" class="w-checkbox-input form_checkbox-icon"><span class="form_checkbox-label text-size-tiny w-form-label" for="Accepts-Marketing-2">
+                    <div id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a6658-185d804e" class="hide w-embed"><input type="hidden" name="contact[accepts_marketing]" value="false"></div><label id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a6659-185d804e" class="w-checkbox form_checkbox" name="contact[accepts_marketing]"><input type="checkbox" name="Accepts-Marketing-2" id="Accepts-Marketing-2" data-name="Accepts Marketing 2" class="w-checkbox-input form_checkbox-icon"><span class="form_checkbox-label text-size-tiny w-form-label" for="Accepts-Marketing-2">
 {{ section.settings.text_checkbox }}
-</span></label><input type="submit" data-wait="" id="w-node-_5eccf730-c887-5204-0e0c-693f99a732ae-99a7328f" class="button w-button" value="Subscribe to Newsletter">
+</span></label><input type="submit" data-wait="" id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a6661-185d804e" class="button w-button" value="Subscribe to Newsletter">
                   {% endform %}
                   <div class="hide w-form-done">
                     <div>Thank you! Your submission has been received!</div>
@@ -58,14 +58,14 @@
                                     {% if block.settings.image_icon %}
 {{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_shipping-icon' }}
 {% else %}
-<img src="{{ 'payment.svg' | asset_url }}" loading="lazy" alt="" class="footer_shipping-icon">
+<img loading="lazy" alt="" src="{{ 'payment.svg' | asset_url }}" class="footer_shipping-icon">
 {% endif %}
                             </div>
             {% endif %}
 {% endfor %}
                 </div>
               </div>
-              {% if enabled_payment_types.length > 0 %}    <div li-if="enabled_payment_types.length > 0" id="w-node-_5eccf730-c887-5204-0e0c-693f99a732bf-99a7328f" class="footer_icon-block">
+              {% if enabled_payment_types.length > 0 %}    <div li-if="enabled_payment_types.length > 0" id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a6672-185d804e" class="footer_icon-block">
     
                 <div class="text-size-regular">
 {{ section.settings.text_payment_method }}
@@ -92,7 +92,7 @@
                     <div li-block="Social-Media" class="footer_icon-item">
                                     
                     
-                                    <a href="{{ block.settings.url_link }}" target="_blank" class="footer_social-link w-inline-block"> {% if block.settings.image_icon %} {{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_social-icon' }} {% else %} <img src="{{ 'Social-Icon.svg' | asset_url }}" loading="lazy" alt="" class="footer_social-icon"> {% endif %} </a>
+                                    <a href="{{ block.settings.url_link }}" target="_blank" class="footer_social-link w-inline-block"> {% if block.settings.image_icon %} {{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_social-icon' }} {% else %} <img loading="lazy" alt="" src="{{ 'Social-Icon.svg' | asset_url }}" class="footer_social-icon"> {% endif %} </a>
                                     
                   
                             </div>
@@ -110,9 +110,9 @@
               <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="footer_logo-link w-inline-block">{% if section.settings.image_logo %}
 {{ section.settings.image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_logo' }}
 {% else %}
-<img src="{{ 'liquify-logo-white.svg' | asset_url }}" loading="lazy" alt="" class="footer_logo">
+<img loading="lazy" alt="" src="{{ 'liquify-logo-white.svg' | asset_url }}" class="footer_logo">
 {% endif %}</a>
-              <div li-for:inside="link in linklists['footer'].links" id="w-node-_5eccf730-c887-5204-0e0c-693f99a732d3-99a7328f" class="footer_legal-links">
+              <div li-for:inside="link in linklists['footer'].links" id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a6686-185d804e" class="footer_legal-links">
         {% for link in linklists['footer'].links %}                            
                 
                             <a li-object="link.title" li-object:href="link.url" href="{{ link.url }}" class="footer_legal-link">{{ link.title }}</a>
@@ -121,7 +121,7 @@
                     {% endfor %}    </div>{% if localization.available_languages.size > 1 %}    <localization-form li-if="localization.available_languages.size > 1" class="li-lang_wrapper">
     
                 {% form 'localization', class: 'li-lang_form' %}
-<div data-hover="true" data-delay="500" class="li-lang_dropdown w-dropdown">
+<div data-delay="500" data-hover="true" class="li-lang_dropdown w-dropdown">
                     <div lang="{{ localization.language.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
                       <div li-object="localization.language.endonym_name | capitalize">{{ localization.language.endonym_name | capitalize }}</div>
                       {% if link.links.size > 0 %}    <div li-if="link.links.size > 0" class="li-lang_dd-toggle-icon w-embed">

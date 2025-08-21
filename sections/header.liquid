@@ -1,12 +1,12 @@
-<div data-animation="default" class="nav_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="9132635a-7891-b0d1-9b20-ecb0d5a86df9" role="banner" data-duration="400" x-data="">
-          <div class="nav_container">
+<div data-animation="default" class="nav_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="6e3cbb9a-66d5-c9da-8c73-cb0e383a64e4" role="banner" data-duration="400" x-data="">
+          <div class="nav_container-2">
             <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="nav_logo-link w-nav-brand">{% if section.settings.image_logo %}
 {{ section.settings.image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'nav_logo' }}
 {% else %}
-<img src="{{ 'liquify-logo.svg' | asset_url }}" loading="lazy" alt="" class="nav_logo">
+<img loading="lazy" alt="" src="{{ 'liquify-logo.svg' | asset_url }}" class="nav_logo">
 {% endif %}</a>
-            <nav role="navigation" id="w-node-_9132635a-7891-b0d1-9b20-ecb0d5a86dfd-d5a86df8" class="nav_menu is-page-height-tablet w-nav-menu">
-              {% for link in linklists[section.settings.menu].links %}    <div data-hover="true" data-delay="200" li-for="link in linklists[section.settings.menu].links" class="nav_menu-dropdown w-dropdown">
+            <nav role="navigation" id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a64e8-185d804e" class="nav_menu is-page-height-tablet w-nav-menu">
+              {% for link in linklists[section.settings.menu].links %}    <div data-delay="200" data-hover="true" li-for="link in linklists[section.settings.menu].links" class="nav_menu-dropdown w-dropdown">
                                     
                 
                             <div class="nav_dropdown-toggle w-dropdown-toggle">
@@ -28,7 +28,7 @@
                   <div class="padding-global max-width-full">
                     <div class="container-large">
                       <div class="nav_dropdown-grid">
-                        {% for child_link in link.links %}    <div li-for="child_link in link.links" id="w-node-_9132635a-7891-b0d1-9b20-ecb0d5a86e09-d5a86df8">
+                        {% for child_link in link.links %}    <div li-for="child_link in link.links" id="w-node-_6e3cbb9a-66d5-c9da-8c73-cb0e383a64f4-185d804e">
                                     
                           
                             <a href="{{ child_link.url }}" li-object="child_link.title" li-object:href="child_link.url" class="nav_dropdown-link w-dropdown-link">{{ child_link.title }}</a>
@@ -62,7 +62,7 @@
             </nav>
             <div class="nav_shop-icons">
               <div class="nav_search">
-                <div data-hover="false" data-delay="0" class="nav_dropdown w-dropdown">
+                <div data-delay="0" data-hover="false" class="nav_dropdown w-dropdown">
                   <div class="nav_shop-icon w-dropdown-toggle">
                     <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
                         <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
@@ -87,7 +87,7 @@
                       </div><predictive-search>
                         <div class="predictive-search_holder">
                           <div class="predictive-search_form w-form">
-                            <form id="wf-form-produkt-suche" name="wf-form-produkt-suche" data-name="produkt-suche" action="/search" method="get" class="predictive-search_form-component" data-wf-page-id="68a658bbce91756196391a1e" data-wf-element-id="ace72904-ccb0-6b8e-3d5e-d5f5ca33919d">
+                            <form id="wf-form-produkt-suche" name="wf-form-produkt-suche" data-name="produkt-suche" action="/search" method="get" class="predictive-search_form-component" data-wf-page-id="68a607eb9f9660f4185d804e" data-wf-element-id="6e3cbb9a-66d5-c9da-8c73-cb0e383a650b">
                               <div class="predictive-search_input-holder"><label for="search-input" class="form_hidden-label">Search</label><input type="search" id="search-input" placeholder="Search now" name="q" class="predictive-search_input">
                                 <a href="#" class="predictive-search_search-button w-inline-block">
                                   <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
@@ -652,7 +652,7 @@
 });
 
 </script>
-<div data-hover="false" data-delay="0" li-element="mini-cart" class="nav_dropdown w-dropdown" x-data="handleMinicart()" x-init="getCart()" @cartupdated.window="getCart()" @setcartitem.window="updateCartItemQuantity($event.detail.product, $event.detail.quantity)" @increasecartitem.window="increaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @decreasecartitem.window="decreaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @toggleminicart.window="toggleMiniCart()" @showcartmessage.window="showCartMessage" @getcartitems.window="returnCartItems">
+<div data-delay="0" data-hover="false" li-element="mini-cart" class="nav_dropdown w-dropdown" x-data="handleMinicart()" x-init="getCart()" @cartupdated.window="getCart()" @setcartitem.window="updateCartItemQuantity($event.detail.product, $event.detail.quantity)" @increasecartitem.window="increaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @decreasecartitem.window="decreaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @toggleminicart.window="toggleMiniCart()" @showcartmessage.window="showCartMessage" @getcartitems.window="returnCartItems">
                   <div li-element="mini-cart-toggle" class="nav_shop-icon w-dropdown-toggle" @click="$dispatch('cartupdated.window')">
                     <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
                         <mask id="mask0_2941_121294" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -678,7 +678,7 @@
                         <div class="mini-cart_line-item no-scrollbar">
                           <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
                             <template x-for="product in products" :key="product.key">
-    <li li-element="mini-cart-item" class="mini-cart_line-item_item"><img src="../images/product-apparel-2.svg" loading="lazy" alt="" class="mini-cart_line-item_img" x-bind:src="product.image">
+    <li li-element="mini-cart-item" class="mini-cart_line-item_item"><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a5e8abe5e804b4f407f02b/68a5e8ace5e804b4f407f14a_product-apparel-2.svg" class="mini-cart_line-item_img" x-bind:src="product.image">
                               <div class="mini-cart_line-item_product-info">
                                 <div li-js-object="product.title" class="text-size-regular text-weight-bold" x-text="product.title">Product Title</div>
                                 <div class="mini-cart_line-item_price">
