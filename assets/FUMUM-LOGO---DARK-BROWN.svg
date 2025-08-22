@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="LOGO_COLOR_LARGE" data-name="LOGO COLOR LARGE" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3681.44 685.52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #140b0b;
+      }
+    </style>
+  </defs>
+  <g id="dark_brown" data-name="dark brown">
+    <polygon class="cls-1" points="3681.44 0 3338.68 184.08 2995.92 0 2995.92 685.52 3681.44 685.52 3681.44 0"/>
+    <path class="cls-1" d="M2932.45,0h-685.49v342.78c0,189.29,153.45,342.74,342.74,342.74h0c189.29,0,342.74-153.45,342.74-342.74V0Z"/>
+    <polygon class="cls-1" points="2183.48 0 1840.72 184.08 1497.96 0 1497.96 685.52 2183.48 685.52 2183.48 0"/>
+    <path class="cls-1" d="M1434.49,0h-685.49v342.78c0,189.29,153.45,342.74,342.74,342.74h0c189.29,0,342.74-153.45,342.74-342.74V0Z"/>
+    <g>
+      <polygon class="cls-1" points="685.52 0 0 0 0 685.52 342.76 685.52 342.76 406.24 342.76 222.16 507.79 222.16 685.52 222.16 685.52 0"/>
+      <circle class="cls-1" cx="514.14" cy="393.54" r="171.38"/>
+    </g>
+  </g>
+</svg>
