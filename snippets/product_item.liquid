@@ -14,7 +14,6 @@
                       <div class="spacer-xxsmall"></div>
                       <a li-object:href="product.url" href="{{ product.url }}" class="product-item_text-link w-inline-block">
                         <div class="product-item_left">
-                          <div li-object="product.vendor" class="text-size-small">{{ product.vendor }}</div>
                           <div li-object="product.title" class="heading-style-h4 text-weight-normal">{{ product.title }}</div>
                         </div>
                         <div class="product-item_price">
@@ -31,7 +30,7 @@
                         <div class="product-item_form-wrapper">
                           {% if product.available == true %}    <div li-if="product.available == true">
     
-                            <a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart($event, true)" :disabled="!addToCartButton">Add to Cart</a>
+                            <a li-element="add-to-cart" href="#" class="button max-width-full w-button" @click="addToCart($event, true)" :disabled="!addToCartButton">I want this!</a>
                               </div>
 {% endif %}
                           {% if product.available != true %}    <div li-if="product.available != true">
